@@ -1,0 +1,141 @@
+<html>
+<head>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300);
+
+body {
+  background: #0f0d25;
+}
+
+h2 {
+  position: absolute;
+  left: calc(50vw - 115px);
+  top: 70%;
+  font-family: 'Lato';
+  font-size: 50px;
+  font-weight: 100;
+  color: white;
+  animation: flicker 1s infinte;
+}
+
+p {
+  position: absolute;
+  left: calc(50vw - 50px);
+  top: 87%;
+  font-family: 'Lato';
+  font-size: 15px;
+  color: ivory;
+  animation: flicker 1s infinte;
+}
+
+a, a:hover, a:visited, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: calc(50vh - 200px);
+  animation: pulse 2s infinite alternate;
+}
+
+.ring {
+  position: absolute;
+  border-radius: 50%;
+  margin: 200px 200px;
+  background: #548f60;
+  z-index: 1;
+}
+
+.ring:nth-child(5) {
+  height: 75px;
+  width: 65px;
+  transform: translate(-32px, -36px);
+  opacity: 0.5;
+  z-index: 3;
+}
+.ring:nth-child(4) {
+  height: 114px;
+  width: 104px;
+  transform: translate(-52px, -57px);
+  opacity: 0.4;
+  z-index: 3;
+}
+.ring:nth-child(3) {
+  height: 154px;
+  width: 144px;
+  transform: translate(-72px, -77px);
+  opacity: 0.3;
+  z-index: 3;
+}
+.ring:nth-child(2) {
+  height: 194px;
+  width: 188px;
+  transform: translate(-94px, -96px);
+  opacity: 0.2;
+  z-index: 3;
+}
+.ring:nth-child(1) {
+  height: 234px;
+  width: 224px;
+  transform: translate(-112px, -117px);
+  opacity: 0.1;
+}
+
+.flame {
+  position: absolute;
+  margin: 200px 200px;
+  border-radius: 50% 0 50% 50%;
+  z-index: 4;
+}
+
+.flameY {
+  background: #edc574;
+  height: 35px;
+  width: 35px;
+  transform: translate(-16px, -10px) rotate(-45deg);
+  animation: flicker 2s infinite;
+}
+
+.flameW {
+  background: #efebdc;
+  height: 20px;
+  width: 20px;
+  transform: translate(-8px, 3px) rotate(-45deg);
+  opacity: 0.7;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  100% {transform: scale(1.25);}
+}
+@keyframes flicker {
+  0% {opacity: 0.9;}
+  100% {opacity: 0.7;}
+}
+</style>
+</head>
+<body>
+<h2>eid mubarak</h2>
+<p>inspired by <a href="https://dribbble.com/shots/2818146-Eid-Mubarak-2016" target="_blank"><u></u></a></p>
+
+<div class="container">
+
+  <div class="candle">
+    <div class="ring"></div>
+    <div class="ring"></div>
+    <div class="ring"></div>
+    <div class="ring"></div>
+    <div class="ring"></div>
+    <div class="ring"></div>
+    <div class="flame flameY"></div>
+    <div class="flame flameW"></div>
+    <div class="stick"></div>
+    <div class="bottle"></div>
+  </div>
+</div>
+
+</body>
+</html>
